@@ -1,7 +1,7 @@
 #ifndef C0DE4UN_MYLIB_H
 #define C0DE4UN_MYLIB_H
 
-#include <core.hh>
+#include <Core.hh>
 #include <iostream>
 
 class TestScript : Script {

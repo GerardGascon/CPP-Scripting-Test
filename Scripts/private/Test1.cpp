@@ -1,7 +1,7 @@
 #ifndef C0DE4UN_MYLIB_H
 	#define MYLIB_EXPORT
 #endif
-#include "../public/mylib.hh"
+#include "../public/Test2.hh"
 
 #include <iostream>
 

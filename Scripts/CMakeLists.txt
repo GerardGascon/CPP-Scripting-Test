@@ -6,15 +6,15 @@ set(PROJECT_VERSION 1.0.0)
 project(${PROJECT_NAME} VERSION ${PROJECT_VERSION} DESCRIPTION "My Library" LANGUAGES C CXX)
 
 set(MY_LIB_HEADERS
-        public/mylib.hh
+        public/Test2.hh
 )
 
 set(PUBLIC_HEADERS
-        public/mylib.hh
+        public/Test2.hh
 )
 
 set(MY_LIB_SOURCES
-        private/mylib.cpp
+        private/Test1.cpp
 )
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)

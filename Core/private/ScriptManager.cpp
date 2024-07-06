@@ -4,7 +4,7 @@
 
 #include "../public/ScriptManager.hh"
 
-#include "../public/core.hh"
+#include "../public/Core.hh"
 
 void ScriptManager::OnProcess(float delta) {
 	for (Script* s : Script::instances) {

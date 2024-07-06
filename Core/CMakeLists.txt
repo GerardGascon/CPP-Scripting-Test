@@ -6,15 +6,15 @@ set(PROJECT_VERSION 1.0.0)
 project(${PROJECT_NAME} VERSION ${PROJECT_VERSION} DESCRIPTION "My Library" LANGUAGES C CXX)
 
 set(MY_LIB_HEADERS
-        public/core.hh
+        public/Core.hh
 )
 
 set(PUBLIC_HEADERS
-        public/core.hh
+        public/Core.hh
 )
 
 set(MY_LIB_SOURCES
-        private/core.cpp
+        private/Core.cpp
         private/ScriptManager.cpp
         public/ScriptManager.hh
 )

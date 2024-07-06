@@ -1,5 +1,5 @@
 #include <iostream>
-#include <mylib.hh>
+#include <Test2.hh>
 #include <ScriptManager.hh>
 
 int main() {
