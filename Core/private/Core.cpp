@@ -10,10 +10,10 @@ std::list<Script*> Script::instances;
 
 Script::Script() {
 	instances.push_back(this);
-	std::cout << "instantiated" << std::endl;
+	std::cout << "base init" << std::endl;
 }
 
 Script::~Script() {
 	instances.remove(this);
-	std::cout << "removed" << std::endl;
+	std::cout << "base destroy" << std::endl;
 }

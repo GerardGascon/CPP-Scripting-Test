@@ -1,20 +1,29 @@
 #include <iostream>
-#include <Test2.hh>
+#include <TestScript.hh>
 #include <ScriptManager.hh>
 
 int main() {
-	std::cout << "Hello, World!" << std::endl;
-	
-	TestScript* test = new TestScript();
-	
-	char c;
-	while ((std::cin >> c) && c != 'r'){ 
-		ScriptManager::OnProcess(1.f);
+	TestScript* test1 = new TestScript("test1");
+	TestScript* test2 = new TestScript("test2");
+
+	std::cout << std::endl << "Test OnProcess() with OnReady() not called yet" << std::endl << std::endl;
+	for (int i = 0; i < 5; ++i) {
+		ScriptManager::OnProcess((float)i);
 	}
 	
-	delete test;
+	std::cout << std::endl << "Test OnPhysicsProcess()" << std::endl << std::endl;
+	for (int i = 0; i < 5; ++i) {
+		ScriptManager::OnPhysicsProcess((float)i);
+	}
 	
-	std::cin.get();
+	std::cout << std::endl << "Test OnProcess() with OnReady() already called" << std::endl << std::endl;
+	for (int i = 0; i < 5; ++i) {
+		ScriptManager::OnProcess((float)i);
+	}
+
+	std::cout << std::endl;
+	delete test2;
+	delete test1;
 
 	return 0;
 }

@@ -11,7 +11,7 @@ class Script {
 	friend class ScriptManager;
 public:	
 	Script();
-	~Script();
+	virtual ~Script();
 	
 	virtual void OnReady() { }
 	virtual void OnProcess(float delta) { }
